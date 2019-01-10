@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".isi_air">
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".AboutFragment">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="236dp"
+            android:text=""
+            android:background="@drawable/latar2"
+            />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update Time - UTC"
+            android:textColor="#000000"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"
+            android:textSize="26dp"
+            />
+
+        <TextView
+            android:id="@+id/solar_waktu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="#83faec"
+            android:textAlignment="center"
+            android:ems="6"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="280dp"
+            android:layout_marginLeft="110dp"
+            android:text="Solar Radiation"
+            android:textSize="23dp" />
+
+
+
+        <TextView
+            android:id="@+id/solar_radiation"
+            android:layout_width="130dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="330dp"
+            android:background="#83faec"
+            android:textAlignment="center"
+            android:ems="6"
+            android:textSize="23dp" />
+
+
+
+
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>

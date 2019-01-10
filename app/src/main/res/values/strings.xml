@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">AWS Staklim Yogyakarta</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">AWS Stasiun Klimatologi Yogyakarta</string>
+    <string name="nav_header_subtitle">www.bmkg.go.id</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="about"> Aplikasi AWS Staklim Yogya merupakan salah satu media informasi yang berguna untuk memonitoring alat-alat Authomatic Weather Station yang berada pada Stasiun Klimatologi Mlati
+    BMKG Yogyakarta. Aplikasi ini dirancang dan dibangun sebagai salah satu bentuk nyata dari program kerja praktek yang melibatkan tim mahasiswa Teknik Informatika Universitas Pembangunan Nasional "Veteran"
+    Yogyakarta serta bekerjasama dengan elemen Stasiun Klimatologi Mlati BMKG Yogyakarta.</string>
+    <string name="about1">Dengan aplikasi ini diharapkan dapat membuat tugas pegawai dalam memonitoring
+    alat-alat AWS menjadi lebih efisien</string>
+    <string name="about2">Tim Pengembang</string>
+    <string name="about3">Niken Oktaviana</string>
+    <string name="about4">Septi Nur Indrawati</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
