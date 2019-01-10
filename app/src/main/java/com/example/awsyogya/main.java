@@ -24,18 +24,19 @@ import com.example.awsyogya.model.ApiResponse;
 import com.example.awsyogya.model.DataBmkg;
 import com.example.awsyogya.network.Network;
 import android.support.v4.widget.SwipeRefreshLayout;
+import android.widget.Toast;
+
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
 public class main extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements NavigationView.OnNavigationItemSelectedListener, SwipeRefreshLayout.OnRefreshListener {
     public static final String ROOT_URL = "http://10.0.2.2/aws_bmkg/";
 
     private Fragment fragment;
     public static DataBmkg dataBmkg= null;
     private View view;
-    private SwipeRefreshLayout SwipeRefresh;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -52,6 +53,10 @@ public class main extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+        getApi();
+    }
+
+    public static void  getApi(){
         ApiService api = Network.getRetrofit().create(ApiService.class);
         api.getData().enqueue(new Callback<ApiResponse>() {
             @Override
@@ -61,12 +66,26 @@ public class main extends AppCompatActivity
 
             @Override
             public void onFailure(Call<ApiResponse> call, Throwable t) {
-
             }
         });
     }
 
+    public static void  getApi(final SwipeRefreshLayout swipeRefreshLayout){
+        ApiService api = Network.getRetrofit().create(ApiService.class);
+        api.getData().enqueue(new Callback<ApiResponse>() {
+            @Override
+            public void onResponse(Call<ApiResponse> call, Response<ApiResponse> response) {
+                swipeRefreshLayout.setRefreshing(false);
+                dataBmkg = response.body().getData()[0];
+            }
 
+            @Override
+            public void onFailure(Call<ApiResponse> call, Throwable t) {
+                swipeRefreshLayout.setRefreshing(false);
+
+            }
+        });
+    }
 
 
     @Override
@@ -151,7 +170,10 @@ public class main extends AppCompatActivity
     }
 
 
-
+    @Override
+    public void onRefresh() {
+        getApi();
+    }
 }
 
 
