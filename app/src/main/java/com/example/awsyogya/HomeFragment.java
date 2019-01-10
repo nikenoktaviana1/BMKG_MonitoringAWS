@@ -3,6 +3,7 @@ package com.example.awsyogya;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
@@ -31,8 +32,6 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_home, container, false);
-        TextView txTime = view.findViewById(R.id.home_waktu);
-        txTime.setText(main.dataBmkg.getTanggal()+" "+main.dataBmkg.getJam());
 
 
         // hello.setOnClickListener(new View.OnClickListener() {
@@ -44,4 +43,10 @@ public class HomeFragment extends Fragment {
         return view;
     }
 
+    @Override
+    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
+        TextView txTime = view.findViewById(R.id.home_waktu);
+        txTime.setText(main.dataBmkg.getTanggal()+" "+main.dataBmkg.getJam());
+    }
 }

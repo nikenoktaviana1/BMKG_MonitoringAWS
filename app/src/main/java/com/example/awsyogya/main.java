@@ -1,6 +1,7 @@
 package com.example.awsyogya;
 
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -53,8 +54,13 @@ public class main extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        getApi();
+        if (getFragmentManager().findFragmentById(R.id.frame_fragment)==null){
+            fragment = new HomeFragment();
+            changeFragment(fragment);
+            getSupportActionBar().setTitle("Home");
+        }
     }
+
 
     public static void  getApi(){
         ApiService api = Network.getRetrofit().create(ApiService.class);
