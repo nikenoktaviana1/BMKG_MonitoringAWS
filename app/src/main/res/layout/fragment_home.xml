@@ -24,6 +24,7 @@
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:background="#83faec"
+        android:textColor="#000000"
         android:ems="6"
         android:textAlignment="center"
         android:textSize="30dp" />

@@ -11,4 +11,5 @@
     <color name="red">#ff003b</color>
     <color name="background">#fcfcfc</color>
     <color name="text">#080808</color>
+    <color name="circle">#000000</color>
 </resources>

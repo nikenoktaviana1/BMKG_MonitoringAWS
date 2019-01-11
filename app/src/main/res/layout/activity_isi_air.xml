@@ -4,12 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".isi_air">
+    tools:context=".isi_air"
+    android:padding="10dp">
 
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/simpleSwipeRefreshLayout"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" >
+        android:layout_height="wrap_content"
+        >
 
         <ScrollView
             android:layout_width="match_parent"
@@ -19,6 +21,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
         tools:context=".AboutFragment">
         <TextView
             android:id="@+id/textView5"

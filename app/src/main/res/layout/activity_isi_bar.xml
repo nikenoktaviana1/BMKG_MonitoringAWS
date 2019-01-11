@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".isi_air">
+    tools:context=".isi_air"
+    android:padding="10dp">
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/simpleSwipeRefreshLayout"
         android:layout_width="match_parent"
@@ -16,6 +17,7 @@
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+
         tools:context=".AboutFragment">
         <TextView
             android:layout_width="match_parent"
@@ -177,8 +179,9 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="520dp"
+            android:layout_marginTop="490dp"
             android:layout_marginLeft="20dp"
+            android:textColor="#000000"
             android:text="Depth 100 cm"
             android:textAlignment="center"
             android:textSize="20dp" />
@@ -187,9 +190,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="6"
-            android:layout_marginTop="520dp"
+            android:layout_marginTop="490dp"
             android:layout_marginLeft="190dp"
             android:textSize="20dp"
+            android:textColor="#000000"
             android:textAlignment="center"
             android:background="#83faec"
             />
