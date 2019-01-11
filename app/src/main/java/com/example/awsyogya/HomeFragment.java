@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +19,9 @@ import android.content.Intent;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener  {
+    private SwipeRefreshLayout SwipeRefresh;
+    private TextView txdirec, txTime;
     private View view;
 
 
@@ -46,7 +49,20 @@ public class HomeFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        TextView txTime = view.findViewById(R.id.home_waktu);
+        txTime = view.findViewById(R.id.home_waktu);
+        txdirec = view.findViewById(R.id.windDirec);
+        SwipeRefresh = view.findViewById(R.id.simpleSwipeRefreshLayout);
+        SwipeRefresh.setOnRefreshListener(this);
+        initData();
+    }
+    private void initData(){
+        txdirec.setText(main.dataBmkg.getWD()+" ̊");
         txTime.setText(main.dataBmkg.getTanggal()+" "+main.dataBmkg.getJam());
     }
-}
+    @Override
+    public void onRefresh() {
+        main.getApi(SwipeRefresh);
+        initData();
+    }
+
+    }
