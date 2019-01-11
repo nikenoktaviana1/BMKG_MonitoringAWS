@@ -19,7 +19,7 @@
         tools:context=".AboutFragment">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="236dp"
+            android:layout_height="170dp"
             android:text=""
             android:background="@drawable/latar2"
             />
@@ -41,7 +41,7 @@
             android:layout_marginTop="80dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:background="#83faec"
+            android:textColor="#000000"
             android:textAlignment="center"
             android:ems="6"
             android:textSize="30dp" />
@@ -49,23 +49,26 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="250dp"
+            android:layout_marginTop="220dp"
             android:layout_marginLeft="20dp"
+            android:textColor="#000000"
             android:text="Depth -5 cm"
             android:textSize="20dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="295dp"
+            android:layout_marginTop="265dp"
             android:layout_marginLeft="20dp"
+            android:textColor="#000000"
             android:text="Depth 0 cm"
             android:textSize="20dp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="340dp"
+            android:layout_marginTop="310dp"
             android:layout_marginLeft="20dp"
+            android:textColor="#000000"
             android:text="Depth 5 cm"
             android:textSize="20dp" />
 
@@ -74,7 +77,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="190dp"
-            android:layout_marginTop="250dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="220dp"
+            android:textColor="#000000"
             android:background="#83faec"
             android:textAlignment="center"
             android:ems="6"
@@ -84,8 +89,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="6"
-            android:layout_marginTop="295dp"
+            android:layout_marginTop="265dp"
             android:layout_marginLeft="190dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"
             android:background="#83faec"
             android:textAlignment="center"
             android:textSize="20dp"
@@ -95,8 +102,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="6"
-            android:layout_marginTop="340dp"
+            android:layout_marginTop="310dp"
             android:layout_marginLeft="190dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"
             android:textSize="20dp"
             android:textAlignment="center"
             android:background="#83faec"
@@ -104,23 +113,26 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="475dp"
+            android:layout_marginTop="445dp"
             android:layout_marginLeft="20dp"
+            android:textColor="#000000"
             android:text="Depth 50 cm"
             android:textSize="20dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="430dp"
             android:layout_marginLeft="20dp"
+            android:layout_marginTop="400dp"
+            android:textColor="#000000"
             android:text="Depth 20 cm"
             android:textSize="20dp" />
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="385dp"
+            android:layout_marginTop="355dp"
             android:layout_marginLeft="20dp"
+            android:textColor="#000000"
             android:text="Depth 10 cm"
             android:textSize="20dp" />
 
@@ -128,20 +140,23 @@
             android:id="@+id/bar_dept10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:ems="6"
-            android:layout_marginTop="385dp"
             android:layout_marginLeft="190dp"
+            android:layout_marginTop="355dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"
             android:background="#83faec"
-            android:textSize="20dp"
+            android:ems="6"
             android:textAlignment="center"
-            />
+            android:textSize="20dp" />
         <TextView
             android:id="@+id/bar_dept20"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="6"
-            android:layout_marginTop="430dp"
+            android:layout_marginTop="400dp"
             android:layout_marginLeft="190dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"
             android:background="#83faec"
             android:textAlignment="center"
             android:textSize="20dp"
@@ -151,8 +166,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="6"
-            android:layout_marginTop="475dp"
+            android:layout_marginTop="445dp"
             android:layout_marginLeft="190dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000000"
             android:textSize="20dp"
             android:textAlignment="center"
             android:background="#83faec"

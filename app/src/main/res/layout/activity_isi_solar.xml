@@ -19,7 +19,7 @@
         tools:context=".AboutFragment">
         <TextView
             android:layout_width="match_parent"
-            android:layout_height="236dp"
+            android:layout_height="170dp"
             android:text=""
             android:background="@drawable/latar2"
             />
@@ -41,7 +41,7 @@
             android:layout_marginTop="80dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:background="#83faec"
+            android:textColor="#000000"
             android:textAlignment="center"
             android:ems="6"
             android:textSize="30dp" />
@@ -51,6 +51,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="280dp"
             android:layout_marginLeft="110dp"
+            android:textColor="#000000"
+            android:textAlignment="center"
             android:text="Solar Radiation"
             android:textSize="23dp" />
 
@@ -58,10 +60,11 @@
 
         <TextView
             android:id="@+id/solar_radiation"
-            android:layout_width="130dp"
-            android:layout_height="100dp"
-            android:layout_marginLeft="125dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="110dp"
             android:layout_marginTop="330dp"
+            android:textColor="#000000"
             android:background="#83faec"
             android:textAlignment="center"
             android:ems="6"
