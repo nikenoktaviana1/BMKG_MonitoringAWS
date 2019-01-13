@@ -25,6 +25,7 @@ public class isi_turf extends AppCompatActivity implements SwipeRefreshLayout.On
         txTime = findViewById(R.id.turf_waktu);
         SwipeRefresh = findViewById(R.id.simpleSwipeRefreshLayout);
         SwipeRefresh.setOnRefreshListener(this);
+        initData();
     }
      private void initData(){
 

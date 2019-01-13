@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".isi_air">
+    tools:context=".isi_air"
+    android:padding="10dp">
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/simpleSwipeRefreshLayout"
         android:layout_width="match_parent"
@@ -191,6 +192,7 @@
             android:ems="6"
             android:layout_marginTop="475dp"
             android:layout_marginLeft="190dp"
+            android:layout_marginRight="20dp"
             android:textSize="20dp"
             android:background="#83faec"
             android:textColor="#000000"

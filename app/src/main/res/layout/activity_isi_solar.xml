@@ -55,7 +55,7 @@
             android:textColor="#000000"
             android:textAlignment="center"
             android:text="Solar Radiation"
-            android:textSize="23dp" />
+            android:textSize="20dp" />
 
 
 
@@ -65,11 +65,12 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="110dp"
             android:layout_marginTop="330dp"
+            android:layout_marginRight="20dp"
             android:textColor="#000000"
             android:background="#83faec"
             android:textAlignment="center"
             android:ems="6"
-            android:textSize="23dp" />
+            android:textSize="20dp" />
 
 
 

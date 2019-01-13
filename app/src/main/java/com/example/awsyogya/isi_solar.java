@@ -18,6 +18,7 @@ public class isi_solar extends AppCompatActivity implements SwipeRefreshLayout.O
         txTime = findViewById(R.id.solar_waktu);
         SwipeRefresh = findViewById(R.id.simpleSwipeRefreshLayout);
         SwipeRefresh.setOnRefreshListener(this);
+        initData();
     }
     private void initData(){
         txSolar.setText(main.dataBmkg.getSR()+ " W/m2");
