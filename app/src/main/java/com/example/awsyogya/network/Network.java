@@ -7,7 +7,7 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Network {
-    private static String API_BASE_URL = "http://10.42.0.209/aws_bmkg/";
+    private static String API_BASE_URL = "http://192.168.100.226/aws_bmkg/";
     private static Retrofit retrofit;
 
 
