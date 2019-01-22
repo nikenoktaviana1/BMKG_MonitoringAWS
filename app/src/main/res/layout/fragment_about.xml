@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:padding="10dp"
+        android:padding="5dp"
         android:background="@color/background"
         >
 
@@ -63,25 +63,18 @@
             android:textSize="20dp"/>
 
         <me.biubiubiu.justifytext.library.JustifyTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/about"
-            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_marginLeft="20dp"
-            android:textSize="13dp"/>
+            android:layout_marginTop="10dp"
+            android:text="@string/about"
+            android:textSize="13dp" />
 
         <me.biubiubiu.justifytext.library.JustifyTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:text="@string/about1"
             android:layout_marginTop="10dp"
-            android:layout_marginLeft="20dp"
-            android:textSize="13dp"/>
-
-        <me.biubiubiu.justifytext.library.JustifyTextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/about11"
             android:layout_marginLeft="20dp"
             android:textSize="13dp"/>
 

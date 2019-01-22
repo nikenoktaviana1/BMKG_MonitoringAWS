@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".isi_air"
-    android:padding="10dp">
+    android:padding="5dp">
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/simpleSwipeRefreshLayout"
         android:layout_width="match_parent"
@@ -40,8 +40,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="80dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
             android:textColor="#000000"
             android:textAlignment="center"
             android:ems="6"
@@ -50,8 +48,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="200dp"
+            android:text="HASIL"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="280dp"
-            android:layout_marginLeft="110dp"
+            android:layout_gravity="center_horizontal"
             android:textColor="#000000"
             android:textAlignment="center"
             android:text="Solar Radiation"
@@ -63,11 +70,10 @@
             android:id="@+id/solar_radiation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="110dp"
             android:layout_marginTop="330dp"
-            android:layout_marginRight="20dp"
+            android:layout_gravity="center_horizontal"
             android:textColor="#000000"
-            android:background="#83faec"
+            android:background="@drawable/rectangle1"
             android:textAlignment="center"
             android:ems="6"
             android:textSize="20dp" />

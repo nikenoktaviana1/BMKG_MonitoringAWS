@@ -5,183 +5,202 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".isi_air"
-    android:padding="10dp">
+    android:padding="5dp">
+
     <android.support.v4.widget.SwipeRefreshLayout
         android:id="@+id/simpleSwipeRefreshLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" >
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:padding="10dp"
-        tools:context=".AboutFragment">
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="170dp"
-            android:text=""
-            android:background="@drawable/background_langit"
-            />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Update Time - UTC"
-            android:textColor="#000000"
-            android:layout_marginTop="20dp"
-            android:textAlignment="center"
-            android:textSize="26dp"
-            />
 
-        <TextView
-            android:id="@+id/turf_waktu"
+        <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="80dp"
-            android:layout_marginLeft="20dp"
-            android:textAlignment="center"
-            android:layout_marginRight="20dp"
-            android:textColor="#000000"
-            android:ems="6"
-            android:textSize="30dp" />
+            android:layout_height="match_parent"
+
+            tools:context=".AboutFragment">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/background_langit"
+                android:text="" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:text="Update Time - UTC"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="26dp" />
+
+            <TextView
+                android:id="@+id/turf_waktu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:ems="6"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="30dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="200dp"
+                android:text="HASIL"
+                android:textColor="#000000"
+                android:textSize="20dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="205dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginTop="260dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
             android:textColor="#000000"
             android:text="Depth -5 cm"
             android:textSize="20dp" />
+            <TextView
+                android:id="@+id/turf_deptmin5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="260dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:textColor="#000000"
+                android:background="@drawable/rectangle1"
+                android:ems="6"
+                android:textAlignment="center"
+                android:textSize="20dp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="250dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginTop="310dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
             android:textColor="#000000"
             android:text="Depth 0 cm"
             android:textSize="20dp" />
-        <TextView
+            <TextView
+                android:id="@+id/turf_dept0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:layout_marginTop="310dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:textColor="#000000"
+                android:background="@drawable/rectangle1"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                />
+
+            <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="295dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginTop="360dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
             android:textColor="#000000"
             android:text="Depth 5 cm"
             android:textSize="20dp" />
+            <TextView
+                android:id="@+id/turf_dept5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:layout_marginTop="360dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:textColor="#000000"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                android:background="@drawable/rectangle1"
+                />
 
-        <TextView
-            android:id="@+id/turf_deptmin5"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="410dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:text="Depth 10 cm"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/turf_dept10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:layout_marginTop="410dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:textColor="#000000"
+                android:background="@drawable/rectangle1"
+                android:textAlignment="center"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="460dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:text="Depth 20 cm"
+                android:textSize="20dp" />
+            <TextView
+                android:id="@+id/turf_dept20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="6"
+                android:layout_marginTop="460dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:textColor="#000000"
+                android:background="@drawable/rectangle1"
+                android:textSize="20dp"
+                android:textAlignment="center"
+                />
+
+            <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="190dp"
-            android:layout_marginTop="205dp"
-            android:layout_marginRight="20dp"
-            android:textColor="#000000"
-            android:background="#83faec"
-            android:ems="6"
-            android:textAlignment="center"
-            android:textSize="20dp" />
-        <TextView
-            android:id="@+id/turf_dept0"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="6"
-            android:layout_marginTop="250dp"
-            android:layout_marginLeft="190dp"
-            android:layout_marginRight="20dp"
-            android:textColor="#000000"
-            android:background="#83faec"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            />
-        <TextView
-            android:id="@+id/turf_dept5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="6"
-            android:layout_marginTop="295dp"
-            android:layout_marginLeft="190dp"
-            android:layout_marginRight="20dp"
-            android:textColor="#000000"
-            android:textSize="20dp"
-            android:textAlignment="center"
-            android:background="#83faec"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="430dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginTop="510dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
             android:textColor="#000000"
             android:text="Depth 50 cm"
             android:textSize="20dp" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="385dp"
-            android:layout_marginLeft="20dp"
-            android:textColor="#000000"
-            android:text="Depth 20 cm"
-            android:textSize="20dp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="340dp"
-            android:layout_marginLeft="20dp"
-            android:textColor="#000000"
-            android:text="Depth 10 cm"
-            android:textSize="20dp" />
-
-        <TextView
-            android:id="@+id/turf_dept10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="6"
-            android:layout_marginTop="340dp"
-            android:layout_marginLeft="190dp"
-            android:layout_marginRight="20dp"
-            android:textColor="#000000"
-            android:background="#83faec"
-            android:textAlignment="center"
-            android:textSize="20dp"
-            />
-        <TextView
-            android:id="@+id/turf_dept20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="6"
-            android:layout_marginTop="385dp"
-            android:layout_marginLeft="190dp"
-            android:layout_marginRight="20dp"
-            android:textColor="#000000"
-            android:background="#83faec"
-            android:textSize="20dp"
-            android:textAlignment="center"
-            />
         <TextView
             android:id="@+id/turf_dept50"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="6"
-            android:layout_marginTop="430dp"
-            android:layout_marginLeft="190dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginTop="510dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
             android:textColor="#000000"
             android:textSize="20dp"
-            android:background="#83faec"
+            android:background="@drawable/rectangle1"
             android:textAlignment="center"
             />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="475dp"
-            android:layout_marginLeft="20dp"
+            android:layout_marginTop="560dp"
+            android:layout_gravity="left"
+            android:layout_marginLeft="15dp"
             android:text="Depth 100 cm"
             android:textColor="#000000"
             android:textSize="20dp" />
@@ -190,19 +209,26 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="6"
-            android:layout_marginTop="475dp"
-            android:layout_marginLeft="190dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginTop="560dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
             android:textSize="20dp"
-            android:background="#83faec"
+            android:background="@drawable/rectangle1"
             android:textColor="#000000"
             android:textAlignment="center"
             />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="610dp"
+                android:text=""
+                android:textColor="#000000"
+                android:textSize="20dp" />
 
     </FrameLayout>
     </ScrollView>
     </android.support.v4.widget.SwipeRefreshLayout>
-
 
 </android.support.constraint.ConstraintLayout>
