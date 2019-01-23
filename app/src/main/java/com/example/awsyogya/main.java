@@ -17,7 +17,9 @@ import android.view.MenuItem;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.view.View;
-import android.view.ViewGroup;
+import android.widget.ViewFlipper;
+import android.widget.ImageView;
+
 import android.widget.TextView;
 
 import com.example.awsyogya.api.ApiService;
@@ -38,6 +40,8 @@ public class main extends AppCompatActivity
     private Fragment fragment;
     public static DataBmkg dataBmkg= null;
     private View view;
+//    public ViewFlipper v_flipper;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +49,7 @@ public class main extends AppCompatActivity
         setContentView(R.layout.activity_main);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -60,7 +65,26 @@ public class main extends AppCompatActivity
             changeFragment(fragment);
             getSupportActionBar().setTitle("Home");
         }
+//        int images [] = {R.drawable.compass, R.drawable.profil, R.drawable.background_langit};
+//        v_flipper = findViewById(R.id.flipper);
+//
+//        for (int image : images){
+//            flipperImage(image);
+//        }
     }
+
+//    public void flipperImage(int images){
+//        ImageView imageView = new ImageView(this);
+//        imageView.setBackgroundResource(images);
+//        v_flipper.addView(imageView);
+//        v_flipper.setFlipInterval(4000);
+//        v_flipper.setAutoStart(true);
+//
+//        v_flipper.setInAnimation(this,android.R.anim.slide_in_left);
+//        v_flipper.setOutAnimation(this,android.R.anim.slide_out_right);
+//
+//
+//    }
 
 
     public static void  getApi(){

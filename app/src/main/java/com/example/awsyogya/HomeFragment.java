@@ -2,6 +2,7 @@ package com.example.awsyogya;
 
 
 import android.app.Activity;
+import android.widget.ViewFlipper;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -45,12 +46,6 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
         view = inflater.inflate(R.layout.fragment_home, container, false);
 
 
-        // hello.setOnClickListener(new View.OnClickListener() {
-        //   @Override
-        // public void onClick(View view) {
-        //   Toast.makeText(getContext(),"Cl icked",Toast.LENGTH_SHORT).show();
-        // }
-        //});
         return view;
     }
 

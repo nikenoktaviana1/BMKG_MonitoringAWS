@@ -33,11 +33,18 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_gravity="center"
-        android:background="#83faec"
+        android:background="@drawable/rectangle1"
         android:textColor="#000000"
         android:ems="8"
         android:textAlignment="center"
         android:textSize="30dp" />
+        <!--<ViewFlipper-->
+            <!--android:layout_width="350dp"-->
+            <!--android:layout_height="200dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:id="@+id/flipper">-->
+        <!--</ViewFlipper>-->
     <ImageView
         android:layout_width="250dp"
         android:layout_height="250dp"
@@ -50,11 +57,11 @@
         android:id="@+id/windDirec"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:ems="7"
+        android:ems="5"
         android:layout_marginTop="30dp"
         android:textColor="#000000"
         android:textAlignment="center"
-        android:background="#83faec"
+        android:background="@drawable/rectangle1"
         android:textSize="19dp"
         />
         <TextView
@@ -63,10 +70,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:ems="7"
-            android:layout_marginTop="0dp"
+            android:layout_marginTop="5dp"
             android:textColor="#000000"
             android:textAlignment="center"
-            android:background="#83faec"
+            android:background="@drawable/rectangle1"
             android:textSize="19dp"
             />
     </LinearLayout>

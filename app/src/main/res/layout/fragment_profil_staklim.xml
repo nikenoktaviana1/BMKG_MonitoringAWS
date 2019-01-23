@@ -18,12 +18,15 @@
                 >
 
                 <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="350dp"
+                    android:layout_height="250dp"
                     android:clipToPadding="false"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
                     android:gravity="center"
                     android:orientation="horizontal"
-                    android:background="@drawable/latar2">
+                    android:background="@drawable/background_langit">
 
 
                     <android.support.v7.widget.CardView
@@ -56,9 +59,10 @@
                     android:id="@+id/menu_sejarah"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:background="#aecff7"
+                    android:background="@drawable/rectangle1"
                     android:text="Sejarah"
                     android:textAlignment="center"
+                    android:layout_marginTop="20dp"
                     android:textColor="#000000"
                     android:textSize="30dp" />
                 <TextView
@@ -66,19 +70,21 @@
                     android:layout_height="match_parent"
                     android:id="@+id/menu_visimisi"
                     android:text="Visi Misi"
+                    android:layout_marginTop="10dp"
                     android:textSize="30dp"
                     android:textColor="#000000"
                     android:textAlignment="center"
-                    android:background="#5a95dc"/>
+                    android:background="@drawable/rectangle1"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:id="@+id/menu_tugas"
                     android:text="Tugas Pokok"
                     android:textAlignment="center"
+                    android:layout_marginTop="10dp"
                     android:textSize="30dp"
                     android:textColor="#000000"
-                    android:background="#aecff7"/>
+                    android:background="@drawable/rectangle1"/>
 
 
 
