@@ -27,8 +27,12 @@
         <activity android:name=".isi_turf" />
         <activity android:name=".isi_solar" />
         <activity android:name=".isi_bare" />
-        <activity android:name=".main"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activity_sejarah" />
+        <activity android:name=".activity_visimisi" />
+        <activity android:name=".activity_tugas"></activity>
     </application>
 
 </manifest>

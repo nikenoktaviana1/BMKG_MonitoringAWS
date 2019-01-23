@@ -25,7 +25,7 @@ public class isi_rain extends AppCompatActivity implements SwipeRefreshLayout.On
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_isi_rain);
-        getSupportActionBar().setTitle("Rain");
+        getSupportActionBar().setTitle("Rain & Evaporation");
 
         txHujan = findViewById(R.id.rain_rain);
         txEvaporasi = findViewById(R.id.rain_evaporation);

@@ -130,7 +130,7 @@ public class main extends AppCompatActivity
         } else if (id == R.id.nav_Monitoring) {
             fragment = new MonitoringFragment();
             changeFragment(fragment);
-            getSupportActionBar().setTitle("Monitoring");
+            getSupportActionBar().setTitle("Monitoring AWS");
         } else if (id == R.id.nav_Link) {
             fragment= new LinkFragment();
             changeFragment(fragment);
@@ -139,6 +139,14 @@ public class main extends AppCompatActivity
             fragment=new AboutFragment();
             changeFragment(fragment);
             getSupportActionBar().setTitle("About");
+        } else if(id== R.id.nav_profil){
+            fragment=new profil_staklim();
+            changeFragment(fragment);
+            getSupportActionBar().setTitle("Profil");
+        } else if(id == R.id.nav_book){
+            fragment= new ManualBookFragment();
+            changeFragment(fragment);
+            getSupportActionBar().setTitle("Manual Book");
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

@@ -14,7 +14,19 @@
     <string name="about2">Tim Pengembang</string>
     <string name="about3">Niken Oktaviana</string>
     <string name="about4">Septi Nur Indrawati</string>
-
+    <string name="sejarah1">Dalam rangka peningkatan pelayanan data dan informasi khususnya di bidang cuaca dan iklim, maka BMKG membangun Stasiun Klimatologi Yogyakarta, salah satu Unit Pelaksana Teknis (UPT) yang pembangunannya dimulai pada tahun 2014.</string>
+    <string name="sejarah2">Stasiun Klimatologi Yogyakarta berdiri di atas lahan seluas 8866 m2, terbagi menjadi 4 bagian utama yakni gedung operasional dan tata usaha (200 m2) yang terdiri dua lantai, gedung radar (64 m2) terdiri dari 4 lantai, taman alat (2400 m2), kebun percobaan (3600 m2). Stasiun Klimatologi Yogyakarta terletak di Jalan Kabupaten Km 5.5, Duwet, Sendangadi, Mlati, Sleman, Daerah Istimewa Yogyakarta.</string>
+    <string name="sejarah3">Stasiun Klimatologi Yogyakarta yang awalnya masih merupakan Pos Pengamatan Klimatologi dibawah Stasiun Geofisika Klas I Yogyakarta, sudah beroperasi sejak pertengahan bulan April 2015. Stasiun Klimatologi Yogyakarta diresmikan oleh Mantan Wakil Gubernur Daerah Istimewa Yogyakarta, Kanjeng Gusti Pangeran Adipati Aryo (KGPAA) Paku Alam IX, Bendoro Raden Mas Haryo (Alm) pada tanggal 21 Oktober 2015.
+        Terhitung Mulai Tanggal 29 November 2016, Stasiun Klimatologi Yogyakarta telah resmi ditetapkan dalam PERKA BMKG No.9 Tahun 2016 untuk menjadi stasiun tersendiri dengan nama Stasiun Klimatologi Klas IV Mlati, Yogyakarta.</string>
+    <string name="visi">Mewujudkan UPT – BMKG yang handal, tanggap dan mampu dalam rangka mendukung keselamatan masyarakat serta keberhasilan pembangunan di wilayah DIY pada khususnya dan Pembangunan Nasional pada umumnya, serta dapat berperan aktif sebagai ujung tombak BMKG di wilayah DIY.</string>
+    <string name="misi1">1. Mengamati dan memahami fenomena meteorologi, klimatologi dan kualitas udara di wilayah DIY dan sekitarnya;</string>
+    <string name="misi2">2. Menyediakan data, informasi dan jasa meteorologi, klimatologi dan kualitas udara di wilayah DIY di sekitarnya yang handal dan terpercaya;</string>
+    <string name="misi3">3. Mengkoordinasikan kegiatan di bidang meteorologi, klimatologi, dan kualitas udara di wilayah DIY dan sekitarnya;</string>
+    <string name="misi4">4. Berpartisipasi aktif dalam mendukung kegiatan Pemerintah Daerah di bidang meteorologi, klimatologi, dan kualitas udara.</string>
+    <string name="tugas">Melakukan tugas pemerintahan di bidang Klimatologi, Meteorologi dan Kualitas Udara sesuai peraturan dan perundangan yang berlaku.</string>
+    <string name="fungsi1">1. Pengamatan, pengumpulan, pengolahan, penyebaran, dan analisa data iklim, cuaca dan kualitas udara</string>
+    <string name="fungsi2">2. Pelayanan informasi Meteorologi, Klimatologi dan Kualitas Udara</string>
+    <string name="fungsi3">3. Koordinasi dengan pemerintah daerah serta institusi terkait</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

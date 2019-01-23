@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".profil_staklim">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="5dp"
+                android:background="@color/background"
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:background="@drawable/latar2">
+
+
+                    <android.support.v7.widget.CardView
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:clickable="true"
+                        android:layout_width="130dp"
+                        android:layout_height="140dp"
+                        android:layout_margin="40dp"
+
+                        >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:gravity="center"
+                            >
+
+                            <ImageView
+                                android:layout_width="160dp"
+                                android:layout_height="122dp"
+                                android:padding="10dp"
+                                android:src="@drawable/bmkg"/>
+
+                        </LinearLayout>
+                    </android.support.v7.widget.CardView>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/menu_sejarah"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#aecff7"
+                    android:text="Sejarah"
+                    android:textAlignment="center"
+                    android:textColor="#000000"
+                    android:textSize="30dp" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/menu_visimisi"
+                    android:text="Visi Misi"
+                    android:textSize="30dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"
+                    android:background="#5a95dc"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/menu_tugas"
+                    android:text="Tugas Pokok"
+                    android:textAlignment="center"
+                    android:textSize="30dp"
+                    android:textColor="#000000"
+                    android:background="#aecff7"/>
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+    </FrameLayout>

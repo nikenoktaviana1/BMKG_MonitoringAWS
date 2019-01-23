@@ -52,7 +52,7 @@ public class LinkFragment extends Fragment {
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Loading", Toast.LENGTH_SHORT).show();
 
-                Intent pindah = new Intent(Intent.ACTION_VIEW,Uri.parse("http://www.bmkg.go.id/"));
+                Intent pindah = new Intent(Intent.ACTION_VIEW,Uri.parse("http://www.staklimyogyakarta.com/"));
                 startActivity(pindah);
             }
         });

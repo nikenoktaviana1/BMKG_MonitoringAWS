@@ -11,15 +11,31 @@
         <item
             android:id="@+id/nav_Monitoring"
             android:icon="@drawable/ic_monitoring"
-            android:title="Monitoring" />
+            android:title="Monitoring AWS" />
+        <item
+            android:id="@+id/nav_asrs"
+            android:icon="@drawable/ic_asrs"
+            android:title="Monitoring ASRS"
+            />
         <item
             android:id="@+id/nav_Link"
             android:icon="@drawable/ic_link"
             android:title="Link" />
         <item
+            android:id="@+id/nav_book"
+            android:icon="@drawable/ic_book"
+            android:title="Manual Book"
+            />
+        <item
+            android:id="@+id/nav_profil"
+            android:icon="@drawable/ic_kantor"
+            android:title="Profil Staklim"
+            />
+        <item
             android:id="@+id/nav_about"
             android:icon="@drawable/ic_info_outline_black_24dp"
             android:title="About" />
+
     </group>
 
 

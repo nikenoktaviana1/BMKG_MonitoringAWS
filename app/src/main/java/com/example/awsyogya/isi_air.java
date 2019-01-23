@@ -12,7 +12,7 @@ public class isi_air extends AppCompatActivity implements SwipeRefreshLayout.OnR
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_isi_air);
-        getSupportActionBar().setTitle("Air");
+        getSupportActionBar().setTitle("Air & Pressure");
 
         txTemperature = findViewById(R.id.air_temperature);
         txRH = findViewById(R.id.air_rh);

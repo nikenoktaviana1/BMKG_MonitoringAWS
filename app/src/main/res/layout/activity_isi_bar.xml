@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="200dp"
-            android:text="HASIL"
+            android:text="RESULT"
             android:textColor="#000000"
             android:textSize="20dp" />
 
@@ -63,7 +63,7 @@
             android:layout_gravity="left"
             android:layout_marginLeft="15dp"
             android:textColor="#000000"
-            android:text="Depth -5 cm"
+            android:text="Depth 5 cm"
             android:textSize="20dp" />
         <TextView
             android:id="@+id/bar_deptmin5"
@@ -108,7 +108,7 @@
             android:layout_gravity="left"
             android:layout_marginLeft="15dp"
             android:textColor="#000000"
-            android:text="Depth 5 cm"
+            android:text="Depth -5 cm"
             android:textSize="20dp" />
         <TextView
             android:id="@+id/bar_dept5"
@@ -131,7 +131,7 @@
             android:layout_gravity="left"
             android:layout_marginLeft="15dp"
             android:textColor="#000000"
-            android:text="Depth 10 cm"
+            android:text="Depth -10 cm"
             android:textSize="20dp" />
         <TextView
             android:id="@+id/bar_dept10"
@@ -153,7 +153,7 @@
             android:layout_gravity="left"
             android:layout_marginLeft="15dp"
             android:textColor="#000000"
-            android:text="Depth 20 cm"
+            android:text="Depth -20 cm"
             android:textSize="20dp" />
         <TextView
             android:id="@+id/bar_dept20"
@@ -176,7 +176,7 @@
             android:layout_gravity="left"
             android:layout_marginLeft="15dp"
             android:textColor="#000000"
-            android:text="Depth 50 cm"
+            android:text="Depth -50 cm"
             android:textSize="20dp" />
         <TextView
             android:id="@+id/bar_dept50"
@@ -199,7 +199,7 @@
             android:layout_gravity="left"
             android:layout_marginLeft="15dp"
             android:textColor="#000000"
-            android:text="Depth 100 cm"
+            android:text="Depth -100 cm"
             android:textAlignment="center"
             android:textSize="20dp" />
         <TextView
