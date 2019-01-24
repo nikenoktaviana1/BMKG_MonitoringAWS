@@ -2,6 +2,7 @@ package com.example.awsyogya;
 
 
 import android.app.Activity;
+import android.widget.ImageView;
 import android.widget.ViewFlipper;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -32,6 +33,7 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
     private SwipeRefreshLayout SwipeRefresh;
     private TextView txdirec, txTime, direc;
     private View view;
+    public ViewFlipper v_flipper;
 
 
     public HomeFragment() {
@@ -44,12 +46,32 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_home, container, false);
+        int images [] = {R.drawable.compass, R.drawable.profil, R.drawable.background_langit};
+        v_flipper = view.findViewById(R.id.flipper);
+
+        for (int image : images){
+            flipperImage(image);
+        }
 
 
         return view;
     }
 
-    @Override
+    public void flipperImage(int images){
+        ImageView imageView = new ImageView(getContext());
+        imageView.setBackgroundResource(images);
+        v_flipper.addView(imageView);
+        v_flipper.setFlipInterval(4000);
+        v_flipper.setAutoStart(true);
+
+        v_flipper.setInAnimation(getContext(),android.R.anim.slide_in_left);
+        v_flipper.setOutAnimation(getContext(),android.R.anim.slide_out_right);
+
+
+    }
+
+
+        @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         txTime = view.findViewById(R.id.home_waktu);

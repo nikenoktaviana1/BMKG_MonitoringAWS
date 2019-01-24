@@ -25,7 +25,10 @@ import 	android.widget.MediaController;
 import android.widget.TextView;
 
 import com.example.awsyogya.api.ApiService;
+import com.example.awsyogya.api.ApiServiceAsrs;
 import com.example.awsyogya.model.ApiResponse;
+import com.example.awsyogya.model.AsrsResponse;
+import com.example.awsyogya.model.DataAsrs;
 import com.example.awsyogya.model.DataBmkg;
 import com.example.awsyogya.network.Network;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -41,6 +44,7 @@ public class main extends AppCompatActivity
 
     private Fragment fragment;
     public static DataBmkg dataBmkg= null;
+    public static DataAsrs dataAsrs=null;
     private View view;
 //    public ViewFlipper v_flipper;
 
@@ -75,13 +79,7 @@ public class main extends AppCompatActivity
 //            flipperImage(image);
 //        }
 //  BUAT NAMPILIN VIDEO MASIH EROR HEHE
-//        VideoView video = (VideoView) findViewById(R.id.videoView);
-//        MediaController media = new MediaController(this);
-//        Uri lokasivideo = Uri.parse("android.resource://" + getPackageName()+"/"+R.raw.video);
-//        video.setVideoURI(lokasivideo);
-//        video.setMediaController(media);
-//        video.start();
-//        video.requestFocus();
+
     }
 
 //    public void flipperImage(int images){
@@ -112,6 +110,21 @@ public class main extends AppCompatActivity
         });
     }
 
+    public static void  getApiAsrs(){
+        ApiServiceAsrs api = Network.getRetrofit().create(ApiServiceAsrs.class);
+        api.getData().enqueue(new Callback<AsrsResponse>() {
+            @Override
+            public void onResponse(Call<AsrsResponse> call, Response<AsrsResponse> response) {
+                dataAsrs= response.body().getData()[0];
+            }
+
+            @Override
+            public void onFailure(Call<AsrsResponse> call, Throwable t) {
+
+            }
+        });
+    }
+
     public static void  getApi(final SwipeRefreshLayout swipeRefreshLayout){
         ApiService api = Network.getRetrofit().create(ApiService.class);
         api.getData().enqueue(new Callback<ApiResponse>() {
@@ -123,6 +136,23 @@ public class main extends AppCompatActivity
 
             @Override
             public void onFailure(Call<ApiResponse> call, Throwable t) {
+                swipeRefreshLayout.setRefreshing(false);
+
+            }
+        });
+    }
+
+    public static void  getApiAsrs(final SwipeRefreshLayout swipeRefreshLayout){
+        ApiServiceAsrs api = Network.getRetrofit().create(ApiServiceAsrs.class);
+        api.getData().enqueue(new Callback<AsrsResponse>() {
+            @Override
+            public void onResponse(Call<AsrsResponse> call, Response<AsrsResponse> response) {
+                swipeRefreshLayout.setRefreshing(false);
+                dataAsrs= response.body().getData()[0];
+            }
+
+            @Override
+            public void onFailure(Call<AsrsResponse> call, Throwable t) {
                 swipeRefreshLayout.setRefreshing(false);
 
             }

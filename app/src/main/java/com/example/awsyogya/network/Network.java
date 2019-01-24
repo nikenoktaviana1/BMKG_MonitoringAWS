@@ -7,7 +7,8 @@ import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 public class Network {
-    private static String API_BASE_URL = "http://192.168.0.21/aws_bmkg/";
+    private static String API_BASE_URL = "http://192.168.43.108/aws_bmkg/";
+    private static String API_BASE_URL_ASRS = "http://192.168.43.108/aws_bmkg/";
     private static Retrofit retrofit;
 
 
@@ -25,6 +26,22 @@ public class Network {
         if (retrofit == null){
             retrofit = new Retrofit.Builder()
                     .baseUrl(API_BASE_URL)
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .client(okHttpClient.build())
+                    .build();
+        }
+        return retrofit;
+
+    }
+    public static Retrofit getRetrofit2(){
+        HttpLoggingInterceptor loging = new HttpLoggingInterceptor();
+        loging.setLevel(HttpLoggingInterceptor.Level.BODY);
+        OkHttpClient.Builder okHttpClient = new OkHttpClient.Builder();
+        okHttpClient.addInterceptor(loging).build();
+
+        if (retrofit == null){
+            retrofit = new Retrofit.Builder()
+                    .baseUrl(API_BASE_URL_ASRS)
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(okHttpClient.build())
                     .build();
