@@ -21,18 +21,27 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".isi_rain" />
-        <activity android:name=".isi_wind" />
-        <activity android:name=".isi_air" />
-        <activity android:name=".isi_turf" />
-        <activity android:name=".isi_solar" />
-        <activity android:name=".isi_bare" />
+        <activity android:name=".isi_rain"
+            android:parentActivityName=".main"/>
+        <activity android:name=".isi_wind"
+            android:parentActivityName=".main"/>
+        <activity android:name=".isi_air"
+            android:parentActivityName=".main"/>
+        <activity android:name=".isi_turf"
+            android:parentActivityName=".main"/>
+        <activity android:name=".isi_solar"
+            android:parentActivityName=".main"/>
+        <activity android:name=".isi_bare"
+            android:parentActivityName=".main"/>
         <activity
             android:name=".main"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".activity_sejarah" />
-        <activity android:name=".activity_visimisi" />
-        <activity android:name=".activity_tugas"></activity>
+        <activity android:name=".activity_sejarah"
+            android:parentActivityName=".main"/>
+        <activity android:name=".activity_visimisi"
+            android:parentActivityName=".main"/>
+        <activity android:name=".activity_tugas"
+            android:parentActivityName=".main"></activity>
     </application>
 
 </manifest>

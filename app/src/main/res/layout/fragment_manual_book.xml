@@ -10,5 +10,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:text="MANUAL BOOK" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="PLAY"
+        android:id="@+id/button"
+        android:layout_gravity="center_horizontal"
+        />
+    <VideoView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/videoView"
+        android:layout_gravity="center_horizontal"/>
 
 </FrameLayout>
