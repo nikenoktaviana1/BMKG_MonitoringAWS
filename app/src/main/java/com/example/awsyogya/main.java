@@ -1,5 +1,6 @@
 package com.example.awsyogya;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
@@ -19,7 +20,8 @@ import android.content.DialogInterface;
 import android.view.View;
 import android.widget.ViewFlipper;
 import android.widget.ImageView;
-
+import android.widget.VideoView;
+import 	android.widget.MediaController;
 import android.widget.TextView;
 
 import com.example.awsyogya.api.ApiService;
@@ -65,12 +67,21 @@ public class main extends AppCompatActivity
             changeFragment(fragment);
             getSupportActionBar().setTitle("Home");
         }
+// BUAT BIKIN TAMPILAN SLIDE MASIH EROR HEHE
 //        int images [] = {R.drawable.compass, R.drawable.profil, R.drawable.background_langit};
 //        v_flipper = findViewById(R.id.flipper);
 //
 //        for (int image : images){
 //            flipperImage(image);
 //        }
+//  BUAT NAMPILIN VIDEO MASIH EROR HEHE
+//        VideoView video = (VideoView) findViewById(R.id.videoView);
+//        MediaController media = new MediaController(this);
+//        Uri lokasivideo = Uri.parse("android.resource://" + getPackageName()+"/"+R.raw.video);
+//        video.setVideoURI(lokasivideo);
+//        video.setMediaController(media);
+//        video.start();
+//        video.requestFocus();
     }
 
 //    public void flipperImage(int images){
@@ -171,7 +182,11 @@ public class main extends AppCompatActivity
             fragment= new ManualBookFragment();
             changeFragment(fragment);
             getSupportActionBar().setTitle("Manual Book");
-        }
+        }  else if(id == R.id.nav_asrs){
+            fragment= new srsFragment();
+            changeFragment(fragment);
+            getSupportActionBar().setTitle("Monitoring ASRS");
+    }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

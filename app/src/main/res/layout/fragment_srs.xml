@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".srsFragment">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/simpleSwipeRefreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                tools:context=".AboutFragment">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"
+                    android:text=""
+                    android:background="@drawable/background_langit"
+                    />
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Update Time - UTC"
+                    android:textColor="#000000"
+                    android:layout_marginTop="30dp"
+                    android:textAlignment="center"
+                    android:textSize="26dp"
+                    />
+
+                <TextView
+                    android:id="@+id/waktu_asrs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="100dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"
+                    android:ems="6"
+                    android:textSize="30dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="200dp"
+                    android:text="RESULT"
+                    android:textColor="#000000"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="260dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#000000"
+                    android:text="Azimuth"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/azimut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="260dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:textColor="#000000"
+                    android:background="@drawable/rectangle1"
+                    android:textAlignment="center"
+                    android:ems="6"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="310dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#000000"
+                    android:text="Alltitude"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/alltitude"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:layout_marginTop="310dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:textColor="#000000"
+                    android:background="@drawable/rectangle1"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="360dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#000000"
+                    android:text="Diffuse Radiation"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/diffuse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:layout_marginTop="360dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:textColor="#000000"
+                    android:background="@drawable/rectangle1"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="410dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#000000"
+                    android:text="Global Radiation"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/global"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="410dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:textColor="#000000"
+                    android:background="@drawable/rectangle1"
+                    android:ems="6"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="460dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#000000"
+                    android:text="Nett Radiation"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/nett"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:layout_marginTop="460dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:textColor="#000000"
+                    android:background="@drawable/rectangle1"
+                    android:textAlignment="center"
+                    android:textSize="20dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="510dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#000000"
+                    android:text="Reflective"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/reflective"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:layout_marginTop="510dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/rectangle1"
+                    android:textColor="#000000"
+                    android:textSize="20dp"
+                    android:textAlignment="center"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="560dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#000000"
+                    android:text="DNI"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/dni"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:layout_marginTop="560dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"
+                    android:background="@drawable/rectangle1"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="610dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="15dp"
+                    android:textColor="#000000"
+                    android:text="Sunshine Time"
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/sunshine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:layout_marginTop="610dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"
+                    android:background="@drawable/rectangle1"
+                    />
+                <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="660dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="15dp"
+                android:textColor="#000000"
+                android:text="Battery"
+                android:textAlignment="center"
+                android:textSize="20dp" />
+                <TextView
+                    android:id="@+id/battery"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:layout_marginTop="660dp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:textSize="20dp"
+                    android:textColor="#000000"
+                    android:textAlignment="center"
+                    android:background="@drawable/rectangle1"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="720dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textSize="20dp" />
+            </FrameLayout>
+        </ScrollView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+</FrameLayout>
