@@ -51,16 +51,16 @@ public class srsFragment extends Fragment implements SwipeRefreshLayout.OnRefres
     }
 
     private void initData(){
-        azimut.setText(main.dataAsrs.getAzimuth() + " mm");
-        alltitude.setText(main.dataAsrs.getAlltitude()+" mm");
-        diffuse.setText(main.dataAsrs.getDiffuse_rad()+" ̊C");
-        global.setText(main.dataAsrs.getGlobal_rad()+" ̊C");
-        nett.setText(main.dataAsrs.getNett_rad()+" ̊C");
-        reflective.setText(main.dataAsrs.getReflective_rad()+" ̊C");
-        dni.setText(main.dataAsrs.getDni()+" ̊C");
-        sunshine.setText(main.dataAsrs.getSunshine()+" ̊C");
-        battery.setText(main.dataAsrs.getBattery()+" ̊C");
-        time.setText(main.dataAsrs.getTanggal()+" ");
+        azimut.setText(main.dataAsrs.getAzimuth() + " ̊");
+        alltitude.setText(main.dataAsrs.getAlltitude()+" ̊");
+        diffuse.setText(main.dataAsrs.getDiffuse_rad()+"  W/m2");
+        global.setText(main.dataAsrs.getGlobal_rad()+"  W/m2");
+        nett.setText(main.dataAsrs.getNett_rad()+"  W/m2");
+        reflective.setText(main.dataAsrs.getReflective_rad()+"  W/m2");
+        dni.setText(main.dataAsrs.getDni()+" W/m2");
+        sunshine.setText(main.dataAsrs.getSunshine()+"  minutes");
+        battery.setText(main.dataAsrs.getBattery()+"  W/m2");
+        time.setText(main.dataAsrs.getTanggal()+"  "+main.dataAsrs.getJam());
     }
 
     @Override

@@ -14,6 +14,7 @@ public class isi_turf extends AppCompatActivity implements SwipeRefreshLayout.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_isi_turf);
         getSupportActionBar().setTitle("Turf Soil");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         turfmin5cm = findViewById(R.id.turf_deptmin5);
         turf0cm = findViewById(R.id.turf_dept0);
@@ -41,5 +42,11 @@ public class isi_turf extends AppCompatActivity implements SwipeRefreshLayout.On
     public void onRefresh() {
         main.getApi(SwipeRefresh);
         initData();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }

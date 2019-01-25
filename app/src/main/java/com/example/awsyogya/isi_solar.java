@@ -13,6 +13,7 @@ public class isi_solar extends AppCompatActivity implements SwipeRefreshLayout.O
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_isi_solar);
         getSupportActionBar().setTitle("Solar Radiation");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         txSolar = findViewById(R.id.solar_radiation);
         txTime = findViewById(R.id.solar_waktu);
@@ -27,5 +28,10 @@ public class isi_solar extends AppCompatActivity implements SwipeRefreshLayout.O
     public void onRefresh() {
         main.getApi(SwipeRefresh);
         initData();
+    }
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }

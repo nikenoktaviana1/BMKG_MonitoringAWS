@@ -10,5 +10,11 @@ public class activity_tugas extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_tugas);
         getSupportActionBar().setTitle("Tugas dan Fungsi");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }

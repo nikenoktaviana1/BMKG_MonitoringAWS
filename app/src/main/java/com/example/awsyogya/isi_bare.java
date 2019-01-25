@@ -14,6 +14,7 @@ public class isi_bare extends AppCompatActivity implements SwipeRefreshLayout.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_isi_bar);
         getSupportActionBar().setTitle("Bare Soil");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         barmin5cm = findViewById(R.id.bar_deptmin5);
         bar0cm = findViewById(R.id.bar_dept0);
@@ -43,6 +44,11 @@ public class isi_bare extends AppCompatActivity implements SwipeRefreshLayout.On
         initData();
 
 
+    }
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 
 

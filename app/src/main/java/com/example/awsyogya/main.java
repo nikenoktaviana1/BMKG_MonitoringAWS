@@ -71,29 +71,9 @@ public class main extends AppCompatActivity
             changeFragment(fragment);
             getSupportActionBar().setTitle("Home");
         }
-// BUAT BIKIN TAMPILAN SLIDE MASIH EROR HEHE
-//        int images [] = {R.drawable.compass, R.drawable.profil, R.drawable.background_langit};
-//        v_flipper = findViewById(R.id.flipper);
-//
-//        for (int image : images){
-//            flipperImage(image);
-//        }
-//  BUAT NAMPILIN VIDEO MASIH EROR HEHE
 
     }
 
-//    public void flipperImage(int images){
-//        ImageView imageView = new ImageView(this);
-//        imageView.setBackgroundResource(images);
-//        v_flipper.addView(imageView);
-//        v_flipper.setFlipInterval(4000);
-//        v_flipper.setAutoStart(true);
-//
-//        v_flipper.setInAnimation(this,android.R.anim.slide_in_left);
-//        v_flipper.setOutAnimation(this,android.R.anim.slide_out_right);
-//
-//
-//    }
 
 
     public static void  getApi(){

@@ -46,7 +46,7 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_home, container, false);
-        int images [] = {R.drawable.compass, R.drawable.profil, R.drawable.background_langit};
+        int images [] = {R.drawable.profil, R.drawable.foto_pegawai, R.drawable.foto_kunjungan, R.drawable.foto_taman};
         v_flipper = view.findViewById(R.id.flipper);
 
         for (int image : images){
@@ -61,7 +61,7 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
         ImageView imageView = new ImageView(getContext());
         imageView.setBackgroundResource(images);
         v_flipper.addView(imageView);
-        v_flipper.setFlipInterval(4000);
+        v_flipper.setFlipInterval(3000);
         v_flipper.setAutoStart(true);
 
         v_flipper.setInAnimation(getContext(),android.R.anim.slide_in_left);

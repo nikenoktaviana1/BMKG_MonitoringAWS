@@ -10,5 +10,11 @@ public class activity_visimisi extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_visimisi);
         getSupportActionBar().setTitle("Visi dan Misi");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }

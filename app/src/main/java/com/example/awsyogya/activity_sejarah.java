@@ -10,6 +10,12 @@ public class activity_sejarah extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sejarah);
         getSupportActionBar().setTitle("Sejarah");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+    }
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 }

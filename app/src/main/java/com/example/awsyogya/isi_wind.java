@@ -13,6 +13,7 @@ public class isi_wind extends AppCompatActivity implements SwipeRefreshLayout.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_isi_wind);
         getSupportActionBar().setTitle("Wind");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         txSpeed = findViewById(R.id.wind_speed);
         txDirection = findViewById(R.id.wind_direction);
@@ -30,6 +31,12 @@ public class isi_wind extends AppCompatActivity implements SwipeRefreshLayout.On
     public void onRefresh() {
         main.getApi(SwipeRefresh);
         initData();
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        finish();
+        return true;
     }
 
 }
