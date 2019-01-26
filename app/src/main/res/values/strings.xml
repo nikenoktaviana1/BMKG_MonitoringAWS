@@ -27,6 +27,10 @@
     <string name="fungsi1">1. Pengamatan, pengumpulan, pengolahan, penyebaran, dan analisa data iklim, cuaca dan kualitas udara</string>
     <string name="fungsi2">2. Pelayanan informasi Meteorologi, Klimatologi dan Kualitas Udara</string>
     <string name="fungsi3">3. Koordinasi dengan pemerintah daerah serta institusi terkait</string>
+    <string name="cara1">1. Sebelum membuka aplikasi AWS dan ASRS, pastikan Smartphone Anda sudah terkoneksi dengan jaringan server atau Hotspot "Mlati" BMKG</string>
+    <string name="cara2">2. Buka aplikasi AWS dan ASRS, tunggu hingga muncul halaman "Home"</string>
+    <string name="cara3">3. Operasikan aplikasi sesuai yang diinginkan dengan menekan fitur-fitur yang tersedia pada tombol navigasi</string>
+    <string name="cara4">4. Jika ingin menutup aplikasi, Anda hanya perlu menekan tombol "back" pada Smartphone hingga muncul opsi keluar, lalu pilih "yes"</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

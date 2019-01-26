@@ -40,6 +40,7 @@ public class ManualBookFragment extends Fragment {
                 Uri lokasivideo = Uri.parse("android.resource://" + getContext().getPackageName()+"/"+R.raw.video);
                 video.setVideoURI(lokasivideo);
                 video.setMediaController(media);
+                media.setAnchorView(video);
                 video.start();
                 video.requestFocus();
             }
@@ -47,6 +48,8 @@ public class ManualBookFragment extends Fragment {
 
         return view;
     }
+
+
 
 
 }
