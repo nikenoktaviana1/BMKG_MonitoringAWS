@@ -20,6 +20,7 @@
         android:layout_height="wrap_content"
         android:text="PLAY"
         android:id="@+id/button"
+        android:layout_marginTop="5dp"
         android:layout_gravity="center_horizontal"
         />
     <VideoView
@@ -68,6 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="10dp"
+        android:layout_marginBottom="30dp"
         android:text="@string/cara4"
         android:textSize="13dp"
         android:layout_marginLeft="10dp"
