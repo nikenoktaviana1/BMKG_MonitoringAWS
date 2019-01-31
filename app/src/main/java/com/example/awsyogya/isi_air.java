@@ -29,15 +29,11 @@ public class isi_air extends AppCompatActivity implements SwipeRefreshLayout.OnR
             txRH.setText(main.dataBmkg.getRH()+" %");
             txPressure.setText(main.dataBmkg.getPP_AIR()+ " hPa");
             txTime.setText(main.dataBmkg.getTanggal()+" "+main.dataBmkg.getJam());
-
         }
-
 
         public void onRefresh() {
             main.getApi(SwipeRefresh);
             initData();
-
-
     }
     @Override
     public boolean onSupportNavigateUp() {

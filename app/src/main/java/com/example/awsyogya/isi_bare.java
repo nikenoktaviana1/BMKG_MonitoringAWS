@@ -42,16 +42,11 @@ public class isi_bare extends AppCompatActivity implements SwipeRefreshLayout.On
     public void onRefresh() {
         main.getApi(SwipeRefresh);
         initData();
-
-
     }
     @Override
     public boolean onSupportNavigateUp() {
         finish();
         return true;
     }
-
-
-
-    }
+}
 

@@ -1,34 +1,22 @@
 package com.example.awsyogya;
 
-
-import android.app.Activity;
 import android.widget.ImageView;
 import android.widget.ViewFlipper;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.LinearLayout;
-import android.widget.Toast;
-import android.content.Intent;
-
 import com.example.awsyogya.api.ApiService;
 import com.example.awsyogya.model.ApiResponse;
 import com.example.awsyogya.network.Network;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefreshListener  {
     private SwipeRefreshLayout SwipeRefresh;
     private TextView txdirec, txTime, direc;
@@ -37,14 +25,11 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
 
 
     public HomeFragment() {
-        // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_home, container, false);
         int images [] = {R.drawable.profil, R.drawable.foto_pegawai, R.drawable.foto_kunjungan, R.drawable.foto_taman};
         v_flipper = view.findViewById(R.id.flipper);
@@ -52,8 +37,6 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
         for (int image : images){
             flipperImage(image);
         }
-
-
         return view;
     }
 
@@ -63,13 +46,9 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
         v_flipper.addView(imageView);
         v_flipper.setFlipInterval(3000);
         v_flipper.setAutoStart(true);
-
         v_flipper.setInAnimation(getContext(),android.R.anim.slide_in_left);
         v_flipper.setOutAnimation(getContext(),android.R.anim.slide_out_right);
-
-
     }
-
 
         @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
@@ -136,14 +115,11 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
                 else if (derajat>315 && derajat<=359){
                     direc.setText("Nort Nortwest");
                 }
-
                 txTime.setText(main.dataBmkg.getTanggal()+" "+main.dataBmkg.getJam());
             }
 
             @Override
             public void onFailure(Call<ApiResponse> call, Throwable t) {
-
-
             }
         });
     }
@@ -153,5 +129,4 @@ public class HomeFragment extends Fragment implements SwipeRefreshLayout.OnRefre
         main.getApi(SwipeRefresh);
         initData();
     }
-
-    }
+}

@@ -13,9 +13,6 @@ import android.widget.Toast;
 import android.content.Intent;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class LinkFragment extends Fragment {
 
     private View view;
@@ -27,14 +24,14 @@ public class LinkFragment extends Fragment {
     private LinearLayout link_youtube;
 
     public LinkFragment() {
-        // Required empty public constructor
+
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
+
         view=inflater.inflate(R.layout.fragment_link, container, false);
         link_twitter= (LinearLayout)view.findViewById(R.id.link_twitter);
         link_twitter.setOnClickListener(new View.OnClickListener() {

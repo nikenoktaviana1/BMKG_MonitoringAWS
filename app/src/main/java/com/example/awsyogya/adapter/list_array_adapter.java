@@ -15,10 +15,6 @@ import com.example.awsyogya.model.ApiResponse;
 
 import java.util.ArrayList;
 
-/**
- * Created by JhonDev on 07/10/2016.
- */
-
 public class list_array_adapter extends ArrayAdapter<ApiResponse> {
 
     private ArrayList<ApiResponse> list;
@@ -56,40 +52,28 @@ public class list_array_adapter extends ArrayAdapter<ApiResponse> {
             holder = (MyHolder) convertView.getTag();
         }
 
-//        holder.rain.setText(""+list.get(position).getRr());
-//        holder.evaporation.setText(""+list.get(position).getWl());
-//        holder.surface.setText(""+list.get(position).getTt_wl());
-
         return convertView;
     }
-
     @Override
     public int getCount() {
         return list.size();
     }
-
     @Override
     public void remove(ApiResponse object) {
         super.remove(object);
     }
-
     @Override
     public void clear() {
         super.clear();
     }
-
     @Override
     public void notifyDataSetChanged() {
         super.notifyDataSetChanged();
     }
-
     static class MyHolder {
-
         TextView rain;
         TextView evaporation;
         TextView surface;
-
-
     }
 }
 

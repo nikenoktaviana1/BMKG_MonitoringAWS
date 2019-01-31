@@ -11,20 +11,15 @@ import android.widget.Toast;
 import android.content.Intent;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class profil_staklim extends Fragment {
     private View view;
     private TextView sejarah;
     private TextView visimisi;
     private TextView tugas;
 
-
     public profil_staklim() {
-        // Required empty public constructor
-    }
 
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -36,7 +31,6 @@ public class profil_staklim extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Sejarah", Toast.LENGTH_SHORT).show();
-
                 Intent pindah = new Intent(getActivity(),activity_sejarah.class);
                 startActivity(pindah);
             }
@@ -47,7 +41,6 @@ public class profil_staklim extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Visi dan Misi", Toast.LENGTH_SHORT).show();
-
                 Intent pindah = new Intent(getActivity(),activity_visimisi.class);
                 startActivity(pindah);
             }
@@ -59,12 +52,10 @@ public class profil_staklim extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Tugas dan Fungsi", Toast.LENGTH_SHORT).show();
-
                 Intent pindah = new Intent(getActivity(),activity_tugas.class);
                 startActivity(pindah);
             }
         });
         return view;
     }
-
 }

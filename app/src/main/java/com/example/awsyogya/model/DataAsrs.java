@@ -2,31 +2,8 @@ package com.example.awsyogya.model;
 
 public class DataAsrs
 {
-    private String Tanggal;
-
-    private String alltitude;
-
-    private String diffuse_rad;
-
-    private String global_rad;
-
-    private String nett_rad;
-
-    private String record_id;
-
-    private String battery;
-
-    private String reflective_rad;
-
-    private String Jam;
-
-    private String sunshine;
-
-    private String azimuth;
-
-    private String dni;
-
-    private String IDStation;
+    private String Tanggal, alltitude, diffuse_rad, global_rad, nett_rad, record_id, battery;
+    private String reflective_rad, Jam, sunshine, azimuth, dni, IDStation;
 
     public String getTanggal ()
     {

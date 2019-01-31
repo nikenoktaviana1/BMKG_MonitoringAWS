@@ -29,10 +29,8 @@ public class srsFragment extends Fragment implements SwipeRefreshLayout.OnRefres
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-
-
-
         view=inflater.inflate(R.layout.fragment_srs, container, false);
+
         azimut = view.findViewById(R.id.azimut);
         alltitude = view.findViewById(R.id.alltitude);
         diffuse = view.findViewById(R.id.diffuse);
@@ -45,8 +43,8 @@ public class srsFragment extends Fragment implements SwipeRefreshLayout.OnRefres
         time = view.findViewById(R.id.waktu_asrs);
         SwipeRefresh = view.findViewById(R.id.simpleSwipeRefreshLayout);
         SwipeRefresh.setOnRefreshListener(this);
-        initData();
 
+        initData();
         return view;
     }
 
@@ -67,6 +65,5 @@ public class srsFragment extends Fragment implements SwipeRefreshLayout.OnRefres
     public void onRefresh() {
         main.getApiAsrs(SwipeRefresh);
         initData();
-
     }
 }

@@ -1,59 +1,9 @@
 package com.example.awsyogya.model;
 public class DataBmkg
 {
-    private String RH;
-
-    private String TT_BS_M5;
-
-    private String Tanggal;
-
-    private String TT_BS_10;
-
-    private String TT_TS_M5;
-
-    private String TT_TS_0;
-
-    private String TT_TS_5;
-
-    private String TT_BS_0;
-
-    private String TT_BS_5;
-
-    private String TT_BS_40;
-
-    private String WS;
-
-    private String TT_TS_60;
-
-    private String TT_AIR;
-
-    private String TT_TS_40;
-
-    private String TT_BS_60;
-
-    private String TT_TS_20;
-
-    private String TT_BS_20;
-
-    private String PP_AIR;
-
-    private String WL;
-
-    private String SR;
-
-    private String TT_WL;
-
-    private String RR;
-
-    private String WD;
-
-    private String id_record;
-
-    private String TT_TS_10;
-
-    private String Jam;
-
-    private String IDStation;
+    private String RH, TT_BS_M5, Tanggal, TT_BS_10, TT_TS_M5, TT_TS_0, TT_TS_5, TT_BS_0, TT_BS_5;
+    private String TT_BS_40, WS, TT_TS_60, TT_AIR, TT_TS_40, TT_BS_60, TT_TS_20, TT_BS_20, PP_AIR;
+    private String WL, SR, TT_WL, RR, WD, id_record, TT_TS_10, Jam, IDStation;
 
     public String getRH ()
     {

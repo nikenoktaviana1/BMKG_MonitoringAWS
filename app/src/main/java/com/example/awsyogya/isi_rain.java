@@ -26,7 +26,6 @@ public class isi_rain extends AppCompatActivity implements SwipeRefreshLayout.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_isi_rain);
         getSupportActionBar().setTitle("Rain & Evaporation");
-        //tambah
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         txHujan = findViewById(R.id.rain_rain);
         txEvaporasi = findViewById(R.id.rain_evaporation);
@@ -46,8 +45,6 @@ public class isi_rain extends AppCompatActivity implements SwipeRefreshLayout.On
         main.getApi(SwipeRefresh);
         initData();
     }
-
-// tambahin
     @Override
     public boolean onSupportNavigateUp() {
         finish();

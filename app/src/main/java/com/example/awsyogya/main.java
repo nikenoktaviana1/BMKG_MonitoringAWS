@@ -74,8 +74,6 @@ public class main extends AppCompatActivity
 
     }
 
-
-
     public static void  getApi(){
         ApiService api = Network.getRetrofit().create(ApiService.class);
         api.getData().enqueue(new Callback<ApiResponse>() {
@@ -218,14 +216,12 @@ public class main extends AppCompatActivity
         builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                //if user pressed "yes", then he is allowed to exit from application
                 finish();
             }
         });
         builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                //if user select "No", just cancel this dialog and continue with app
                 dialog.cancel();
             }
         });
@@ -233,11 +229,8 @@ public class main extends AppCompatActivity
         alert.show();
     }
 
-
     @Override
     public void onRefresh() {
         getApi();
     }
 }
-
-

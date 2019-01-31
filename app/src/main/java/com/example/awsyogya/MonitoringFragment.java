@@ -11,38 +11,32 @@ import android.widget.LinearLayout;
 import android.widget.Toast;
 import android.content.Intent;
 
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class MonitoringFragment extends Fragment {
     private View view;
-    private TextView hello;
     private LinearLayout menu_rain;
     private LinearLayout menu_wind;
     private LinearLayout menu_air;
     private LinearLayout menu_turf;
     private LinearLayout menu_solar;
     private LinearLayout menu_bare;
+
     public MonitoringFragment() {
-        // Required empty public constructor
+
     }
 
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
         view = inflater.inflate(R.layout.fragment_monitoring, container, false);
-       menu_rain= (LinearLayout)view.findViewById(R.id.menu_rain);
-       menu_rain.setOnClickListener(new View.OnClickListener(){
+        menu_rain= (LinearLayout)view.findViewById(R.id.menu_rain);
+        menu_rain.setOnClickListener(new View.OnClickListener(){
 
             @Override
           public void onClick(View view) {
                Toast.makeText(getActivity(),"Rain", Toast.LENGTH_SHORT).show();
-
                Intent pindah = new Intent(getActivity(),isi_rain.class);
-              startActivity(pindah);
+                startActivity(pindah);
             }
         });
         menu_wind= (LinearLayout)view.findViewById(R.id.menu_wind);
@@ -50,7 +44,6 @@ public class MonitoringFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Wind", Toast.LENGTH_SHORT).show();
-
                 Intent pindah = new Intent(getActivity(),isi_wind.class);
                 startActivity(pindah);
             }
@@ -60,7 +53,6 @@ public class MonitoringFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Air", Toast.LENGTH_SHORT).show();
-
                 Intent pindah = new Intent(getActivity(),isi_air.class);
                 startActivity(pindah);
             }
@@ -70,7 +62,6 @@ public class MonitoringFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Turf Soil", Toast.LENGTH_SHORT).show();
-
                 Intent pindah = new Intent(getActivity(),isi_turf.class);
                 startActivity(pindah);
             }
@@ -80,7 +71,6 @@ public class MonitoringFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Solar Radioation", Toast.LENGTH_SHORT).show();
-
                 Intent pindah = new Intent(getActivity(),isi_solar.class);
                 startActivity(pindah);
             }
@@ -90,18 +80,10 @@ public class MonitoringFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Bare Soil", Toast.LENGTH_SHORT).show();
-
                 Intent pindah = new Intent(getActivity(),isi_bare.class);
                 startActivity(pindah);
             }
         });
-
-        // hello.setOnClickListener(new View.OnClickListener() {
-        //   @Override
-        // public void onClick(View view) {
-        //   Toast.makeText(getContext(),"Cl icked",Toast.LENGTH_SHORT).show();
-        // }
-        //});
         return view;
     }
 
