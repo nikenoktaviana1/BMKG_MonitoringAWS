@@ -3,11 +3,21 @@ package com.example.awsyogya.model;
 
 public class ApiResponse
 {
+    private DataBmkg[] data;
+
     private String message;
 
     private String status;
 
-    private DataBmkg [] data;
+    public DataBmkg[] getData ()
+    {
+        return data;
+    }
+
+    public void setData (DataBmkg[] data)
+    {
+        this.data = data;
+    }
 
     public String getMessage ()
     {
@@ -29,19 +39,10 @@ public class ApiResponse
         this.status = status;
     }
 
-    public DataBmkg[] getData ()
-    {
-        return data;
-    }
-
-    public void setData (DataBmkg[] data)
-    {
-        this.data = data;
-    }
-
     @Override
     public String toString()
     {
-        return "ClassPojo [message = "+message+", status = "+status+", data = "+data+"]";
+        return "ClassPojo [data = "+data+", message = "+message+", status = "+status+"]";
     }
 }
+
