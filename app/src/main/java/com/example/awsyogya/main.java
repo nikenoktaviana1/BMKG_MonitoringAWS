@@ -89,7 +89,7 @@ public class main extends AppCompatActivity
     }
 
     public static void  getApiAsrs(){
-        ApiServiceAsrs api = Network.getRetrofit().create(ApiServiceAsrs.class);
+        ApiServiceAsrs api = Network.getRetrofit2().create(ApiServiceAsrs.class);
         api.getData().enqueue(new Callback<AsrsResponse>() {
             @Override
             public void onResponse(Call<AsrsResponse> call, Response<AsrsResponse> response) {
@@ -121,7 +121,7 @@ public class main extends AppCompatActivity
     }
 
     public static void  getApiAsrs(final SwipeRefreshLayout swipeRefreshLayout){
-        ApiServiceAsrs api = Network.getRetrofit().create(ApiServiceAsrs.class);
+        ApiServiceAsrs api = Network.getRetrofit2().create(ApiServiceAsrs.class);
         api.getData().enqueue(new Callback<AsrsResponse>() {
             @Override
             public void onResponse(Call<AsrsResponse> call, Response<AsrsResponse> response) {
