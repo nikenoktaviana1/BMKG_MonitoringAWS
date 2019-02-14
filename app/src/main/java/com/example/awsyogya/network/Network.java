@@ -13,10 +13,6 @@ public class Network {
     private static Retrofit retrofit2;
 
 
-// set log level
-
-
-
 
     public static Retrofit getRetrofit(){
         HttpLoggingInterceptor loging = new HttpLoggingInterceptor();

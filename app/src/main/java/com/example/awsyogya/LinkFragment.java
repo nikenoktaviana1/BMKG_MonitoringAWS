@@ -39,7 +39,7 @@ public class LinkFragment extends Fragment {
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Loading", Toast.LENGTH_SHORT).show();
 
-                Intent pindah = new Intent(Intent.ACTION_VIEW,Uri.parse("https://twitter.com/infoBMKG"));
+                Intent pindah = new Intent(Intent.ACTION_VIEW,Uri.parse("https://twitter.com/StaklimJogja"));
                 startActivity(pindah);
             }
         });
@@ -59,7 +59,7 @@ public class LinkFragment extends Fragment {
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Loading", Toast.LENGTH_SHORT).show();
 
-                Intent pindah = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.facebook.com/InfoBMKG/"));
+                Intent pindah = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.facebook.com/staklimjogja/"));
                 startActivity(pindah);
             }
         });
@@ -69,7 +69,7 @@ public class LinkFragment extends Fragment {
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Loading", Toast.LENGTH_SHORT).show();
 
-                Intent pindah = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.instagram.com/infobmkg/?hl=en"));
+                Intent pindah = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.instagram.com/staklim_jogja/"));
                 startActivity(pindah);
             }
         });
@@ -79,7 +79,7 @@ public class LinkFragment extends Fragment {
             public void onClick(View view) {
                 Toast.makeText(getActivity(),"Loading", Toast.LENGTH_SHORT).show();
 
-                Intent pindah = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.youtube.com/user/infoBMKG"));
+                Intent pindah = new Intent(Intent.ACTION_VIEW,Uri.parse("https://www.youtube.com/watch?v=mL-2EdDFsTg"));
                 startActivity(pindah);
             }
         });
