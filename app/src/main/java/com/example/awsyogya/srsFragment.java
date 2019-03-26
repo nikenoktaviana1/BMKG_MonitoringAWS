@@ -10,6 +10,7 @@ import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 /**
@@ -44,7 +45,11 @@ public class srsFragment extends Fragment implements SwipeRefreshLayout.OnRefres
         SwipeRefresh = view.findViewById(R.id.simpleSwipeRefreshLayout);
         SwipeRefresh.setOnRefreshListener(this);
 
-        initData();
+//        if(main.dataAsrs != null){
+            initData();
+//        }else{
+//            Toast.makeText(getActivity(), "Not Connected to Network", Toast.LENGTH_LONG).show();
+//        }
         return view;
     }
 

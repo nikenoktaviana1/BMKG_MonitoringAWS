@@ -184,9 +184,15 @@ public class main extends AppCompatActivity
             changeFragment(fragment);
             getSupportActionBar().setTitle("Manual Book");
         }  else if(id == R.id.nav_asrs){
-            fragment= new srsFragment();
-            changeFragment(fragment);
-            getSupportActionBar().setTitle("Monitoring ASRS");
+
+            if(main.dataAsrs != null){
+                fragment= new srsFragment();
+                changeFragment(fragment);
+                getSupportActionBar().setTitle("Monitoring ASRS");
+            }else{
+                Toast.makeText(this,"Not Connected To Network", Toast.LENGTH_LONG).show();
+            }
+
     }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
